@@ -2,6 +2,16 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        try{
+            EntierNaturel entierNaturel = new EntierNaturel(10);
+            //entierNaturel.setVal(-1);
+            entierNaturel.setVal(0);
+            entierNaturel.decrementer();
+        }
+        catch (NombreNegatifException e){
+            System.out.println(e.getMessage());
+            System.out.println(e.getCas());
+        }
+
     }
 }
