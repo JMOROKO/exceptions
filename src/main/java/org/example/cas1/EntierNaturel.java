@@ -1,4 +1,4 @@
-package org.example;
+package org.example.cas1;
 
 public class EntierNaturel {
     int val;
